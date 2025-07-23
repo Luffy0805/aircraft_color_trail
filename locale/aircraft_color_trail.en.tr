@@ -1,0 +1,35 @@
+
+
+Color Smoke Remote (Mode 1 - Central)=
+Color Smoke Remote (Mode 2 - Side Jets)=
+Color Smoke Remote (Mode 3 - Dual Colored Jets)=
+Mode %s=
+You must be a pilot or co-pilot of a plane.=
+Plane not supported for smoke: =
+Unknown=
+Supported planes: =
+Plane inventory inaccessible.=
+Inventory is empty.=
+No dye found.=
+Smoke deactivated.=
+Smoke activated.=
+You left the plane: smoke stopped.=
+On ground: smoke deactivated.=
+Out of dye: smoke stopped.=
+Out of dye slot 1: smoke stopped.=
+Out of dye slot 2: smoke stopped.=
+Color Smoke System Manual=
+How the Color Smoke System works:=
+This mod adds a colored smoke trail system for the PA-28 airplane.=
+- Left click toggles smoke=
+- AUX1 or SNEAK + left click changes mode=
+Modes:=
+Central jet (1 dye/10s)=
+Side jets (1 dye/5s)=
+Dual‑colored jets (slots 1 & 2, 1 dye each/10s)=
+Dyes must be in the airplane’s inventory.=
+Smoke only works while flying.=
+
+
+Ajoute des traînées de fumée colorées personnalisables pour les avions d'APercy.
+

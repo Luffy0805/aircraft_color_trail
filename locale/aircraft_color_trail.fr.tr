@@ -1,0 +1,34 @@
+# textdomain: aircraft_color_trail
+
+Color Smoke Remote (Mode 1 - Central)=Télécommande Fumée Colorée (Mode 1 - Jet Central)
+Color Smoke Remote (Mode 2 - Side Jets)=Télécommande Fumée Colorée (Mode 2 - Jets Latéraux)
+Color Smoke Remote (Mode 3 - Dual Colored Jets)=Télécommande Fumée Colorée (Mode 3 - Jets Bicolores)
+Mode %s=Mode %s
+You must be a pilot or co-pilot of a plane.=Tu dois être pilote ou copilote d’un avion.
+Plane not supported for smoke: =Avion non pris en charge pour la fumée : 
+Unknown=Inconnu
+Supported planes: =Avions pris en charge : 
+Plane inventory inaccessible.=Inventaire de l’avion inaccessible.
+Inventory is empty.=L’inventaire est vide.
+No dye found.=Aucun colorant trouvé.
+Smoke deactivated.=Fumée désactivée.
+Smoke activated.=Fumée activée.
+You left the plane: smoke stopped.=Tu as quitté l’avion : fumée arrêtée.
+On ground: smoke deactivated.=Au sol : fumée désactivée.
+Out of dye: smoke stopped.=Plus de colorant : fumée arrêtée.
+Out of dye slot 1: smoke stopped.=Plus de colorant dans l’emplacement 1 : fumée arrêtée.
+Out of dye slot 2: smoke stopped.=Plus de colorant dans l’emplacement 2 : fumée arrêtée.
+Color Smoke System Manual=Manuel du système de fumée colorée
+How the Color Smoke System works:=Fonctionnement du système de fumée colorée :
+This mod adds a colored smoke trail system for the PA-28 airplane.=Ce mod ajoute un système de traînée de fumée colorée pour l’avion PA-28.
+- Left click toggles smoke=- Clic gauche : activer/désactiver la fumée
+- AUX1 or SNEAK + left click changes mode=- AUX1 ou SNEAK + clic gauche : changer de mode
+Modes:=Modes :
+Central jet (1 dye/10s)=Jet central (1 colorant/10s)
+Side jets (1 dye/5s)=Jets latéraux (1 colorant/5s)
+Dual‑colored jets (slots 1 & 2, 1 dye each/10s)=Jets bicolores (emplacements 1 & 2, 1 colorant chacun/10s)
+Dyes must be in the airplane’s inventory.=Les colorants doivent être dans l’inventaire de l’avion.
+Smoke only works while flying.=La fumée ne fonctionne que pendant le vol.
+
+Adds customizable colored smoke trails for the aircraft of APercy.=Ajoute des traînées de fumée colorées personnalisables pour les avions d'APercy.
+
