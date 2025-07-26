@@ -62,7 +62,7 @@ La fumée n'apparaît que pendant le vol.
 
 ## Manuel
 
-Un manuel (`pa28_color_trail:manual`) est inclus dans le mod. Il permet de consulter les instructions en jeu sur les modes et l'utilisation.
+Un manuel (`aircraft_color_trail:manual`) est inclus dans le mod. Il permet de consulter les instructions en jeu sur les modes et l'utilisation.
 
 ---
 
