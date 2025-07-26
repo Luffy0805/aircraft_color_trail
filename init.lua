@@ -149,7 +149,7 @@ local function spawn_color_particles_at(pos, color, mode, yaw, inv, vehicle_name
 					maxexptime = 5, 
 					minsize = 10, 
 					maxsize = 12,
-                    texture = "smoke.png^[colorize:"..color..":100", 
+                    texture = "aircraft_color_smoke.png^[colorize:"..color..":100", 
 					glow = 15,
                 })
             end
@@ -172,7 +172,7 @@ local function spawn_color_particles_at(pos, color, mode, yaw, inv, vehicle_name
 					maxexptime = 50, 
 					minsize = 10, 
 					maxsize = 12,
-                    texture = "smoke.png^[colorize:"..c..":100", 
+                    texture = "aircraft_color_smoke.png^[colorize:"..c..":100", 
 					glow = 15,
                 })
             end
@@ -200,7 +200,7 @@ local function spawn_color_particles_at(pos, color, mode, yaw, inv, vehicle_name
 			maxexptime = 50, 
 			minsize = 12, 
 			maxsize = 14,
-            texture = "smoke.png^[colorize:"..color..":100", 
+            texture = "aircraft_color_smoke.png^[colorize:"..color..":100", 
 			glow = 15,
         })
     end
@@ -439,7 +439,7 @@ end)
 -- Integrated manual
 minetest.register_craftitem("aircraft_color_trail:manual", {
     description = S("Color Smoke System Manual"),
-    inventory_image = "book_pa28.png",
+    inventory_image = "aircraft_color_book.png",
 	stack_max = 1,
     on_use = function(itemstack, player, pointed_thing)
         minetest.show_formspec(player:get_player_name(), "pa28_color_trail:manual",
