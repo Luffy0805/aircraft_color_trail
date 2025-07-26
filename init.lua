@@ -26,8 +26,8 @@ local offset_config = {
     },
     ["Albatros"] = {
         mode1 = {x =   0, y =   0, z = -4},
-        mode2 = {x =   15, y = -0.3},
-        mode3 = {x =   4, y = -0.3},
+        mode2 = {x =  3, y = -0.3},
+        mode3 = {x =   3, y = -0.3},
     },
     ["Super Cub"] = {
         mode1 = {x =   0, y =   0, z = -2},
@@ -36,17 +36,17 @@ local offset_config = {
     },
     ["Super Duck Hydroplane"] = {
         mode1 = {x =   0, y =   0, z = -4},
-        mode2 = {x =   15, y = -0.3},
+        mode2 = {x =   3, y = -0.3},
         mode3 = {x =   4, y = -0.3},
     },
     ["Ju 52 3M"] = {
         mode1 = {x =   0, y =   0, z = -2},
-        mode2 = {x =   3, y = -0.2},
-        mode3 = {x =   3, y = -0.2},
+        mode2 = {x =   10, y = -0.2},
+        mode3 = {x =   4, y = -0.2},
     },
     ["Ju 52 3M Hydroplane"] = {
         mode1 = {x =   0, y =   0, z = -4},
-        mode2 = {x =   15, y = -0.3},
+        mode2 = {x =   10, y = -0.3},
         mode3 = {x =   4, y = -0.3},
     },
     -- Ajoutez ici d'autres avions si besoin
@@ -324,7 +324,31 @@ minetest.register_globalstep(function(dtime)
                         st.last_plane_warned = nil
                     end
                 end
+				
+			elseif plane.isinliquid then
+				 -- If on ground and not warned yet
+                if not st.warned_ground then
+                    minetest.chat_send_player(pname, S("On water: smoke deactivated."))
+                    st.warned_ground = true
+                    st.active = false
 
+                    -- Check supported plane and send message if not
+                    local vehicle_name = plane._vehicle_name
+                    local vehicle_cfg = offset_config[vehicle_name]
+                    if not vehicle_cfg then
+                        minetest.chat_send_player(pname, S("Plane not supported for smoke: ") .. (vehicle_name or S("Unknown")))
+                        local supported = {}
+                        for k, _ in pairs(offset_config) do
+                            table.insert(supported, k)
+                        end
+                        table.sort(supported)
+                        minetest.chat_send_player(pname, S("Supported planes: ") .. table.concat(supported, ", "))
+                        st.last_plane_warned = vehicle_name
+                    else
+                        st.last_plane_warned = nil
+                    end
+                end
+			
             else
                 -- In flight
                 st.warned_ground = false
