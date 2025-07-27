@@ -10,14 +10,14 @@ local player_states = {}
 -- z : décalage longitudinal (mode 1)
 local offset_config = {
     ["PA-28"] = {
-        mode1 = {x =   0, y =   0, z = -1},
+        mode1 = {x =   0, y =   0, z = 0},
         mode2 = {x =   3, y = -0.2},
         mode3 = {x =   3, y = -0.2},
     },
     ["Savoia S-21"] = {
         mode1 = {x =   0, y =   0, z = -4},
-        mode2 = {x =   4, y = -0.3},
-        mode3 = {x =   4, y = -0.3},
+        mode2 = {x =   3, y = -0.1},
+        mode3 = {x =   3, y = -0.1},
     },
     ["Sopwith F1 Camel"] = {
         mode1 = {x =   0, y =   0, z = -2},
@@ -36,18 +36,18 @@ local offset_config = {
     },
     ["Super Duck Hydroplane"] = {
         mode1 = {x =   0, y =   0, z = -4},
-        mode2 = {x =   3, y = -0.3},
-        mode3 = {x =   4, y = -0.3},
+        mode2 = {x =   3.5, y = 0},
+        mode3 = {x =   3.5, y = 0},
     },
     ["Ju 52 3M"] = {
         mode1 = {x =   0, y =   0, z = -2},
-        mode2 = {x =   10, y = -0.2},
-        mode3 = {x =   4, y = -0.2},
+        mode2 = {x =   7, y = -0.1},
+        mode3 = {x =   7, y = -0.1},
     },
-    ["Ju 52 3M Hydroplane"] = {
+    ["Ju52 3M Hydroplane"] = {
         mode1 = {x =   0, y =   0, z = -4},
-        mode2 = {x =   10, y = -0.3},
-        mode3 = {x =   4, y = -0.3},
+        mode2 = {x =   7, y = -0.1},
+        mode3 = {x =   7, y = -0.1},
     },
     -- Ajoutez ici d'autres avions si besoin
 	
